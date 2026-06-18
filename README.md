@@ -21,6 +21,7 @@ cybershield/
 └── Résultat/
 
 Auteur
-Boris LOKO Etudiant en 2ème anné à ECAM
+Boris LOKO Etudiant en 2ème année à ECAM
 
 Déploiement
+https://github.com/VERCHILLE242/CyberShield.git
