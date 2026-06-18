@@ -1,0 +1,236 @@
+/* ==========================
+   CYBERSHIELD LOGIN.CSS
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(
+        rgba(15,23,42,0.95),
+        rgba(30,58,138,0.95)
+    );
+    min-height:100vh;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+    background:#0f172a;
+    padding:20px 40px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.3);
+}
+
+.container-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.container-header h1{
+    color:white;
+    font-size:22px;
+    max-width:700px;
+}
+
+nav{
+    display:flex;
+    gap:15px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    background:#2563eb;
+    padding:10px 18px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+/* ==========================
+   FORMULAIRE LOGIN
+========================== */
+
+.login-container{
+
+    width:450px;
+
+    margin:80px auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.25);
+
+}
+
+.logo{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+.logo h1{
+
+    color:#2563eb;
+
+    margin-bottom:10px;
+
+}
+
+.logo p{
+
+    color:#64748b;
+
+}
+
+form h2{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    color:#0f172a;
+
+}
+
+.input-group{
+
+    margin-bottom:20px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+}
+
+.input-group input{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:8px;
+
+    transition:0.3s;
+
+}
+
+.input-group input:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+    box-shadow:
+    0 0 8px rgba(37,99,235,0.3);
+
+}
+
+/* ==========================
+   BOUTON
+========================== */
+
+.cta-button{
+
+    margin-top:15px;
+
+    text-align:center;
+
+}
+
+.cta-button a{
+
+    display:block;
+
+    text-decoration:none;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+
+}
+
+.cta-button a:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-2px);
+
+}
+
+/* ==========================
+   MESSAGE
+========================== */
+
+#message{
+
+    margin-top:20px;
+
+    text-align:center;
+
+    font-weight:bold;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .container-header{
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+    }
+
+    nav{
+        flex-direction:column;
+        width:100%;
+    }
+
+    nav a{
+        text-align:center;
+    }
+
+    .login-container{
+        width:90%;
+        margin:40px auto;
+    }
+
+}

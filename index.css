@@ -1,0 +1,176 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#1e293b;
+}
+
+/* Image de fond */
+
+.background-image{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background:url("../images/cyber-bg.jpg") center center/cover;
+    filter:brightness(0.3);
+    z-index:-1;
+}
+
+/* Header */
+
+header{
+    background:rgba(15,23,42,0.95);
+    padding:20px 40px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.3);
+}
+
+.container-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.container-header h1{
+    color:white;
+    font-size:22px;
+    max-width:700px;
+}
+
+/* Navigation */
+
+nav{
+    display:flex;
+    gap:15px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    padding:10px 18px;
+    border-radius:8px;
+    transition:0.3s;
+    background:#2563eb;
+}
+
+nav a:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+/* Contenu principal */
+
+.container{
+    max-width:1100px;
+    margin:80px auto;
+    text-align:center;
+    background:rgba(255,255,255,0.95);
+    padding:50px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.container h1{
+    color:#2563eb;
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.container p{
+    font-size:20px;
+    color:#475569;
+    margin-bottom:40px;
+}
+
+/* Boutons */
+
+.btn-group{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:10px;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn-red{
+    background:#dc2626;
+}
+
+.btn-red:hover{
+    background:#b91c1c;
+    transform:scale(1.05);
+}
+
+.btn-green{
+    background:#16a34a;
+}
+
+.btn-green:hover{
+    background:#15803d;
+    transform:scale(1.05);
+}
+
+/* Animation */
+
+.container{
+    animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .container-header{
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+    }
+
+    .container h1{
+        font-size:34px;
+    }
+
+    .container p{
+        font-size:18px;
+    }
+
+    nav{
+        flex-direction:column;
+        width:100%;
+    }
+
+    nav a{
+        text-align:center;
+    }
+
+}

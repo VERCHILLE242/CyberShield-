@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield - Dashboard</title>
+   
+    <link rel="stylesheet" href="cyber.css">
+
+</head>
+<header>
+    <div class="container-header">
+        <h1>CyberShield - Plateforme Anti-Cybercriminalité </h1>
+         <nav>
+            <a href="Acceuil.html"><i class="fas fa-paint-brush"></i>Acceuil</a>
+            <a href="dépot.html"><i class="fas fa-paint-brush"></i>Dépot plainte</a>
+            <a href="login.html"><i class="fas fa-paint-brush"></i>connexion enquêteur</a>
+         </nav>
+
+    </div>
+</header>
+
+<body class="bg-gray-100">
+
+    <!-- HEADER -->
+
+    <header class="bg-blue-900 text-white p-4 shadow">
+
+        <div class="container mx-auto flex justify-between items-center">
+
+            <h1 class="text-2xl font-bold">
+                CyberShield
+            </h1>
+
+            <div>
+                <span class="mr-5">
+                    Enquêteur
+                </span>
+
+                <button id="logoutBtn"
+                    class="bg-red-500 hover:bg-red-600 px-4 py-2 rounded">
+                    Déconnexion
+                </button>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- CONTENU -->
+
+    <div class="container mx-auto mt-8 px-4">
+
+        <!-- STATISTIQUES -->
+
+        <div class="grid md:grid-cols-4 gap-4">
+
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-gray-500">
+                    Total Signalements
+                </h3>
+
+                <p id="totalSignalements"
+                    class="text-3xl font-bold text-blue-700">
+                    0
+                </p>
+            </div>
+
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-gray-500">
+                    Nouveaux
+                </h3>
+
+                <p id="nouveauxSignalements"
+                    class="text-3xl font-bold text-red-600">
+                    0
+                </p>
+            </div>
+
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-gray-500">
+                    En cours
+                </h3>
+
+                <p id="encoursSignalements"
+                    class="text-3xl font-bold text-blue-600">
+                    0
+                </p>
+            </div>
+
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-gray-500">
+                    Clôturés
+                </h3>
+
+                <p id="cloturesSignalements"
+                    class="text-3xl font-bold text-green-600">
+                    0
+                </p>
+            </div>
+
+        </div>
+
+        <!-- RECHERCHE -->
+
+        <div class="bg-white rounded shadow p-6 mt-8">
+
+            <h2 class="text-xl font-bold mb-4">
+                Recherche avancée
+            </h2>
+
+            <div class="flex gap-3">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Téléphone, email ou URL suspecte..."
+                    class="border p-3 rounded w-full">
+
+                <button
+                    id="searchBtn"
+                    class="bg-blue-700 text-white px-6 rounded">
+
+                    Rechercher
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- DOSSIERS URGENTS -->
+
+        <div class="bg-yellow-100 border-l-4 border-yellow-500 p-5 mt-8 rounded">
+
+            <h2 class="font-bold text-lg">
+                🚨 Dossiers urgents
+            </h2>
+
+            <ul id="urgentList"
+                class="mt-3">
+            </ul>
+
+        </div>
+
+        <!-- TABLEAU DES SIGNALEMENTS -->
+
+        <div class="bg-white mt-8 rounded shadow overflow-auto">
+
+            <table class="w-full">
+
+                <thead class="bg-gray-200">
+
+                    <tr>
+
+                        <th class="p-3 text-left">
+                            Code
+                        </th>
+
+                        <th class="p-3 text-left">
+                            Titre
+                        </th>
+
+                        <th class="p-3 text-left">
+                            Quartier
+                        </th>
+
+                        <th class="p-3 text-left">
+                            Type
+                        </th>
+
+                        <th class="p-3 text-left">
+                            Statut
+                        </th>
+
+                        <th class="p-3 text-left">
+                            Actions
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="signalementsTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="dashbord.js"></script>
+
+</body>
+
+</html>

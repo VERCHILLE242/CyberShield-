@@ -1,0 +1,223 @@
+/*=========================
+    RESET
+==========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(
+        rgba(7,20,45,0.85),
+        rgba(10,40,90,0.85)
+    ),
+    url("images/cyber-bg.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+/*=========================
+    HEADER
+==========================*/
+
+header{
+    background:rgba(8,25,55,0.95);
+    box-shadow:0 2px 15px rgba(0,0,0,0.3);
+    position:sticky;
+    top:0;
+}
+
+.container-header{
+    width:90%;
+    margin:auto;
+    padding:20px 0;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.container-header h1{
+    color:white;
+    font-size:28px;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#64b5f6;
+}
+
+/*=========================
+    HERO SECTION
+==========================*/
+
+.hero{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:85vh;
+
+    text-align:center;
+
+}
+
+.hero-content{
+
+    max-width:900px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(8px);
+
+    padding:60px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+
+}
+
+.hero-content h2{
+
+    color:white;
+
+    font-size:50px;
+
+    margin-bottom:25px;
+
+}
+
+.hero-content p{
+
+    color:#e5e7eb;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+/*=========================
+    BOUTONS
+==========================*/
+
+.cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.cta-button{
+
+    background:#1565c0;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:16px 30px;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+
+}
+
+.cta-button:hover{
+
+    background:#0d47a1;
+
+    transform:translateY(-3px);
+
+}
+
+.secondary{
+
+    background:#43a047;
+
+}
+
+.secondary:hover{
+
+    background:#2e7d32;
+
+}
+
+/*=========================
+    RESPONSIVE
+==========================*/
+
+@media(max-width:768px){
+
+.container-header{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+nav{
+
+margin-top:20px;
+
+flex-direction:column;
+
+}
+
+.hero-content{
+
+padding:30px;
+
+}
+
+.hero-content h2{
+
+font-size:35px;
+
+}
+
+.hero-content p{
+
+font-size:16px;
+
+}
+
+.cta-buttons{
+
+flex-direction:column;
+
+}
+
+}
